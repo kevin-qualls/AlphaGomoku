@@ -46,8 +46,6 @@ Since this is essentially an image classification task, it makes sense to try to
 
 ![model](https://user-images.githubusercontent.com/31740043/79679151-57d5d180-81d1-11ea-95d3-1f3b453120d3.PNG)
 
-</p>
-
 <p align="center">
   <b>Fig. 3: Neural Network of AI Gomoku</b><br>
 </p>
