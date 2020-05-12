@@ -17,7 +17,6 @@ Similar to Connect Four, Gomoku is like Connect Five (Go means 5 in Japanese, an
 <p align="center">
 <img width="249" alt="Screen Shot 2020-04-13 at 8 59 59 PM" src="https://user-images.githubusercontent.com/54907300/79174814-d85b9300-7dc9-11ea-9377-9cc909485ad2.png">
 </p>
-
 <p align="center">
   <b>Fig. 1: Gomoku is Played on a 15 x 15 Board</b><br>
 </p>
@@ -35,7 +34,6 @@ This entry first specifies the year of the competion, the players and the winner
 <p align="center">
 <img width="249" alt="Screen Shot 2020-04-13 at 8 59 59 PM" src="https://user-images.githubusercontent.com/31740043/79678687-fa8b5180-81cb-11ea-9943-343c38e5bf97.PNG">
 </p>
-
 <p align="center">
   <b>Fig. 2: Understanding Winning Strategy of an Example Game</b><br>
 </p>
@@ -45,7 +43,6 @@ Next, we turned this game string into a sequence of 28 images representing the s
 Since this is essentially an image classification task, it makes sense to try to use a convolutional neural network. The neural network architecture we used came from [[2]](https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning), and took the following form,
 
 ![model](https://user-images.githubusercontent.com/31740043/79679151-57d5d180-81d1-11ea-95d3-1f3b453120d3.PNG)
-
 <p align="center">
   <b>Fig. 3: Neural Network of AI Gomoku</b><br>
 </p>
@@ -91,7 +88,6 @@ Since we were curious about whether our neural network has actually learned impo
 <p align="center">
 <img src="https://user-images.githubusercontent.com/31740043/80993579-4c0d2080-8e09-11ea-9149-3533c65e79e7.gif" >
 </p>
-
 <p align="center">
   <b>Fig. 5: Sample Game of AI Gomoku Playing Against Itself</b><br>
 </p>
@@ -103,7 +99,6 @@ Predictably, our AI is pretty bad at playing the game, as it is missing key comp
 <p align="center">
 <img width="469" alt="Fig 6 final project" src="https://user-images.githubusercontent.com/54907300/81741226-38e2fc00-946c-11ea-9120-3e620d4a3dd2.png">
 </p>
-
 <p align="center">
   <b>Fig. 6: Model Performance of Predicting the Winner for Each Game</b><br>
 </p>
@@ -154,7 +149,6 @@ After applying the same CNN architecture from previous two blog posts (inspired 
 <p align="center">
 <img width="200" alt="accuracy" src="https://user-images.githubusercontent.com/31740043/81613680-e68ed600-93ac-11ea-840a-c94590e37cbc.png">
 </p>
-
 <p align="center">
   <b>Fig. 7: Schematic of Best Performing Model</b><br>
 </p>
@@ -163,15 +157,15 @@ This stack of residual blocks was preceeded by a single convolutional layer, and
 
 Batch normalizations played a pretty important role in our Gomoku model. During our initial experimentation with this model, we also used batch normalizations as a part of our residual blocks. However, this produced slightly suboptimal results compared to our final model, which got rid of batch normalizations altogether. After doing a bit of research on this phenomonon, we realized that this is actually a pretty common theme, among several different neural network architectures, as documented in [8]. The thereoretical explation given there has to do with the fact that dropouts mess with batch statistics ...
 
-We got the following accuracy and loss curves,
+We got the following accuracy and loss curves:
 
 <p align="center">
-<img width="400" alt="accuracy" src="https://user-images.githubusercontent.com/31740043/81614631-53ef3680-93ae-11ea-9396-aed87004b5c0.png">
+<img width="316" alt="fig 8 final project" src="https://user-images.githubusercontent.com/54907300/81743367-80b75280-946f-11ea-9c9a-98521a0d261b.png">
+</p>
+<p align="center">
+  <b>Fig. 8: Accuracy and Loss Curves of Final Model</b><br>
 </p>
 
-<p align="center">
-<img width="400" alt="accuracy" src="https://user-images.githubusercontent.com/31740043/81521369-fd81e980-9314-11ea-9beb-9213ecd440a2.png">
-</p>
 
 Our neural network is able to predict the winner of a given 8-token board state with a validation accuracy of around 87%. 
 
