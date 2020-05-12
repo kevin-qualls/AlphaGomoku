@@ -96,10 +96,16 @@ Since we were curious about whether our neural network has actually learned impo
   <b>Fig. 5: Sample Game of AI Gomoku Playing Against Itself</b><br>
 </p>
 
+
+
 Predictably, our AI is pretty bad at playing the game, as it is missing key components - the "value head" evaluating the chance of winning for different board states, as well as the ability to simulate the future. In order to rectify the first problem, we went back to our dataset of human games. Keeping track of the winner of each game, we assigned a score of +1, -1 or 0 (in case of a draw) to each board state of a given game and averaged those out over the dataset. Then, a neural network of the same architecture as in the initial blog post (except the final layer, adopted to the new regression task) is trained to predict the board state value. We obtain a not great, not terrible performance as seen in the plot below,
 
 <p align="center">
-<img width="400" alt="accuracy" src="https://user-images.githubusercontent.com/31740043/80948589-6bcc2680-8dc0-11ea-9827-2d1b30cf1757.png">
+<img width="469" alt="Fig 6 final project" src="https://user-images.githubusercontent.com/54907300/81741226-38e2fc00-946c-11ea-9120-3e620d4a3dd2.png">
+</p>
+
+<p align="center">
+  <b>Fig. 6: Model Performance of Predicting the Winner for Each Game</b><br>
 </p>
 
 As we can see, the best validation accuracy is achieved very early in the training process, and there is significant overfitting later on.
@@ -147,6 +153,10 @@ After applying the same CNN architecture from previous two blog posts (inspired 
 
 <p align="center">
 <img width="200" alt="accuracy" src="https://user-images.githubusercontent.com/31740043/81613680-e68ed600-93ac-11ea-840a-c94590e37cbc.png">
+</p>
+
+<p align="center">
+  <b>Fig. 7: Schematic of Best Performing Model</b><br>
 </p>
 
 This stack of residual blocks was preceeded by a single convolutional layer, and followed by two dense layers, with 100 hidden neurons. Every convolutional layer in this network had 16 filters. We found that using both dropouts and L1 regularizations yields the best results, and tuned the dropout parameter to 0.3 and L1 regularization parameter to 0.5 in all convolutional layers.
