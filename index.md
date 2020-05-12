@@ -193,3 +193,5 @@ Furthermore, we would like to see if our AI Gomoku can learn any unconventional 
 7. Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
 
 8. https://arxiv.org/pdf/1801.05134.pdf
+
+9. Lecture 21 - Lecture 22: Reinforcement Learning 
