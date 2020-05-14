@@ -59,7 +59,7 @@ This neural network achieved a decent validation accuracy of around 55% pretty q
 
 The model is shown to be overfitted, as the accuracies don't sync with one another. Compared to the training data set, the validation data set shows more stability, as the accuracy and loss number keep a relatively horizontal shape. 
 
-## High-Level Overview of Implementing Reinforcement Learning
+## Reinforcement Learning Approach
 
 We have now obtained a neural network capable of imitating human players by predicting their next move, and plan to use this to jump-start the training of our AI Gomoku player using DeepMind's reinforcement learning algorithm. Let us briefly describe how this would work. 
 
@@ -83,7 +83,7 @@ In the language of DeepMind, our model is a "policy head", advising AI which nex
 # Some Attempts at Self-Play Reinforcement Learning
 ## Midway Blog Post - Stefan Stanojevic, Kevin Qualls
 
-In our initial blog post, we wrote about training a neural network on the dataset of Gomoku games, in order to predict the next move made a human player would make. Since then, we have taken our project a step further and coded an AI Gomoku player that can gradually improve its skill through self-play and reinforcement learning.
+In our initial blog post, we wrote about training a neural network on the dataset of Gomoku games, in order to predict the next move a human player would make. Since then, we have taken our project a step further and coded an AI Gomoku player that can gradually improve its skill through self-play and reinforcement learning.
 
 Since we were curious about whether our neural network has actually learned important elements of the game or not, we decided to quickly code a self-playing module and visualize its performance, before fully implementing the AlphaZero algorithm. We used our trained "policy head", giving us the probability distribution over possible moves, to iteratively generate the next move until one of the AI players was in the position to win by connecting 5 tokens. Python's ipywidget library proved to be very useful for visualizing the games, specifically its objects interact and Play. You can see one of the sample games below:
 
@@ -107,12 +107,12 @@ Predictably, our AI is pretty bad at playing the game, as it is missing key comp
 
 As we can see, the best validation accuracy is achieved very early in the training process, and there is significant overfitting later on.
 
-At this point, we were in a position to try out a slightly more sophisticated algorithm. Our agent can decide on which move to make considering the value functions of different moves, as well as its probability distribution over the space of moves. The first one is related to "exploitation" of its knowledge, more useful in the later stages of the game, and the first one to "exploration" of possibilities, in theory useful for innovation early in the game. 
+At this point, we were in a position to try out a slightly more sophisticated algorithm. Our agent can decide on which move to make considering the value functions of different moves, as well as its probability distribution over the space of moves. The first one is related to "exploitation" of its knowledge, more useful in the later stages of the game, and the second one to "exploration" of possibilities, in theory useful for innovation early in the game. 
 
 We wanted to emulate the AlphaZero algorithm, which worked in the following way. Prior to making each move, simulations of the remainder of the game are made. Since the space of possible games is generally way too large to efficiently cover with a search algorithm, the search is done by looking at a set of the likely games randomly sampled using the probabilities from "policy head" and values from "value head". While AlphaGo does around 1000 simulations at each step, even a much smaller number of simulations looks too computationally intensive for us, with each simulation taking on the order of a minute to finish.
 
 
-## How to Improve Reinforcement Learning Implementation
+## Adjustments to Consider for Reinforcement Learning Approach
 
 The most important task going forward is to speed up the self-play process by removing inefficiencies in our code and using parallel processing. Learning more about Cuda library seems like a good place to start.
 
