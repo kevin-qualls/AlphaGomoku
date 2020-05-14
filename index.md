@@ -35,7 +35,7 @@ This entry first specifies the year of the competion, the players and the winner
 <img width="249" alt="Screen Shot 2020-04-13 at 8 59 59 PM" src="https://user-images.githubusercontent.com/31740043/79678687-fa8b5180-81cb-11ea-9943-343c38e5bf97.PNG">
 </p>
 <p align="center">
-  <b>Fig. 2: Understanding Winning Strategy of an Example Game</b><br>
+  <b>Fig. 2: Sequence of Moves in an Example Game</b><br>
 </p>
 
 Next, we turned this game string into a sequence of 28 images representing the states of the board at different times during the game. Those would correspond to inputs to our neural network. The output was a single number specifying one of 15^2 = 225 possible next moves. Some additional preprocessing included removing the duplicate board game states from the dataset. This was done by first sorting the list of board states, and then iterating through this dataset and collecting neighboring identical boards. Tokens were one-hot encoded, with (1,0,0) corresponding to first player's token, (0,1,0) corresponding to second player's token and (0,0,1) corresponding to empty space.    
@@ -44,7 +44,7 @@ Since this is essentially an image classification task, it makes sense to try to
 
 ![model](https://user-images.githubusercontent.com/31740043/79679151-57d5d180-81d1-11ea-95d3-1f3b453120d3.PNG)
 <p align="center">
-  <b>Fig. 3: Neural Network of AI Gomoku</b><br>
+  <b>Fig. 3: Neural Network of Example Game from Fig 2</b><br>
 </p>
 
 This neural network achieved a decent validation accuracy of around 55% pretty quickly, as shown in the following graphs:
@@ -53,7 +53,7 @@ This neural network achieved a decent validation accuracy of around 55% pretty q
 <img width="261" alt="Screen Shot 2020-05-12 at 3 44 43 PM" src="https://user-images.githubusercontent.com/54907300/81739172-dc321200-9468-11ea-896d-1c30eeb4b2dd.png">
 </p>
 <p align="center">
-  <b>Fig. 4: Accuracies and Losses for Validation and Training</b><br>
+  <b>Fig. 4: Accuracies and Losses of Example Gmae</b><br>
 </p>
 
 
