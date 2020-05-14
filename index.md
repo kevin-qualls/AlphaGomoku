@@ -197,4 +197,4 @@ At the same time, we feel with more computational power, we can use reinforcemen
 
 8. Li, Xiang, et al. "Understanding the disharmony between dropout and batch normalization by variance shift." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019. https://arxiv.org/pdf/1801.05134.pdf
 
-9. Lecture 21 - Lecture 22: Reinforcement Learning 
+9. DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
