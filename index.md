@@ -152,12 +152,15 @@ We feel that with more computational power, we can use reinforcement learning to
 
 [7] Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
 
-
+-- Describes reinforcement learning algorithm used for AlphaGo Zero to defeat AlphaGo 100 times to 0. 
 
 [8] Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
 
+-- Describes how to train a neural network model for images that demonstrate symmetry. This is helpful, since the Gomoku Board is 15x15 and has symmetric properties.
+
 [9] DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
 
+-- Describes how reinforcement learning can pick up helpful, unconventional strategies. 
 ...
 
 # Some Final Exploration 
