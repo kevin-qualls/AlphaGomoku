@@ -87,6 +87,7 @@ In the language of DeepMind, our model is a "policy head", advising AI which nex
 
 -- Shows how to implement curriculum learning - a technique that builds the AI Gomoku's strategy and knowledge of the game through progressively difficult tasks. 
 
+...
 
 # Some Attempts at Self-Play Reinforcement Learning
 ## Midway Blog Post - Stefan Stanojevic, Kevin Qualls
@@ -157,7 +158,9 @@ We feel that with more computational power, we can use reinforcement learning to
 [8] DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
 
 -- Describes how reinforcement learning can pick up helpful, unconventional strategies in AI games. 
+
 ...
+
 
 # Some Final Exploration 
 ## Final Blog Post - Stefan Stanojevic, Kevin Qualls
