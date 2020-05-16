@@ -69,6 +69,8 @@ In the language of DeepMind, our model is a "policy head", advising AI which nex
 
 1. Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
 
+- Gives an overview of origins of Gomoku as well as the rules of the game.
+
 2. Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
 
 3. From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
