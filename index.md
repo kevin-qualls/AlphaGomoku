@@ -67,23 +67,23 @@ In the language of DeepMind, our model is a "policy head", advising AI which nex
 
 ## References
 
-1. Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
+[1] Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
 
 -- Gives an overview of origins of Gomoku as well as the rules of the game.
 
-2. Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
+[2] Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
 
 -- Describes methodology of how to predict moves in Gomoku, using a convolutional neural network model. 
 
-3. From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
+[3] From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
 
 -- Describes how to implement Google DeepMind's AlphaZero approach for Connect4. Methodology can be applied to Gomoku.
 
-4. Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
+[4] Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
 
 -- Archives datasets of Gomoku games. Data is stored in a .bdt file.
 
-5. AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
+[5] AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
 
 -- Shows how to implement curriculum learning - a technique that  builds the AI Gomoku's strategy and knowledge of the game as through progressively difficult tasks. 
 
@@ -126,37 +126,37 @@ We feel that with more computational power, we can use reinforcement learning to
 
 ## References
 
-1. Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
+[1] Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
 
 -- Gives an overview of origins of Gomoku as well as the rules of the game.
 
-2. Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
+[2] Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
 
 -- Describes methodology of how to predict moves in Gomoku, using a convolutional neural network model. 
 
-3. From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
+[3] From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
 
 -- Describes how to implement Google DeepMind's AlphaZero approach for Connect4. Methodology can be applied to Gomoku.
 
-4. Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
+[4] Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
 
 -- Archives datasets of Gomoku games. Data is stored in a .bdt file.
 
-5. AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
+[5] AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
 
 -- Shows how to implement curriculum learning - a technique that  builds the AI Gomoku's strategy and knowledge of the game as through progressively difficult tasks. 
 
-6. Wang, Y. (n.d.). Mastering the Game of Gomoku without Human Knowledge. doi: 10.15368/theses.2018.47
+[6] Wang, Y. (n.d.). Mastering the Game of Gomoku without Human Knowledge. doi: 10.15368/theses.2018.47
 
 -- Describes implementation of an AI Gomoku without prior knowlege from humans. Provides explanation of the Monte Carlo Tree Search algorithm, which we plan to use for our model. 
 
-7. Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
+[7] Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
 
 
 
-8. Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
+[8] Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
 
-9. DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
+[9] DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
 
 ...
 
@@ -213,26 +213,26 @@ In any case, we believe that with more computational time and coffee we can even
 
 ## References
 
-1. Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
+[1] Rules for Gomoku - http://www.opengames.com.ar/en/rules/Gomoku
 
-2. Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
+[2] Shao, Kun & Zhao, Dongbin & Tang, Zhentao & Zhu, Yuanheng. (2016). Move prediction in Gomoku using deep learning. 292-297. 10.1109/YAC.2016.7804906.  - https://www.researchgate.net/publication/312325842_Move_prediction_in_Gomoku_using_deep_learning
 
-3. From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
+[3] From-scratch implementation of AlphaZero for Connect4 - https://towardsdatascience.com/from-scratch-implementation-of-alphazero-for-connect4-f73d4554002a
 
-4. Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
+[4] Gomoku datasets http://mostovlyansky.narod.ru/iedown.html
 
-5. AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
+[5] AlphaGomoku: An AlphaGo-based Gomoku Artificial Intelligence using Curriculum Learning - Zheng Xie, Xing Yu Fu, Jin Yuan Yu, Likelihood Lab, https://arxiv.org/pdf/1809.10595.pdf 
 
-6. Wang, Y. (n.d.). Mastering the Game of Gomoku without Human Knowledge. doi: 10.15368/theses.2018.47
+[6] Wang, Y. (n.d.). Mastering the Game of Gomoku without Human Knowledge. doi: 10.15368/theses.2018.47
 
-7. Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
+[7] Silver, D., Schrittwieser, J., Simonyan, K., Antonoglou, I., Huang, A., Guez, A., … Hassabis, D. (2017). Mastering the game of Go without human knowledge. Nature, 550(7676), 354–359. doi: 10.1038/nature24270
 
-8. Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
+[8] Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
 
-9. DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
+[9] DATA 2040 Lecture 21 - Lecture 22: Reinforcement Learning 
 
-10. Silver, D., Huang, A., Maddison, C. et al. Mastering the game of Go with deep neural networks and tree search. Nature 529, 484–489 (2016). https://doi.org/10.1038/nature16961
+[10] Silver, D., Huang, A., Maddison, C. et al. Mastering the game of Go with deep neural networks and tree search. Nature 529, 484–489 (2016). https://doi.org/10.1038/nature16961
 
-11. Li, Xiang, et al. "Understanding the disharmony between dropout and batch normalization by variance shift." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019. https://arxiv.org/pdf/1801.05134.pdf
+[11] Li, Xiang, et al. "Understanding the disharmony between dropout and batch normalization by variance shift." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019. https://arxiv.org/pdf/1801.05134.pdf
 
-12. Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
+[12] Dieleman, S., De Fauw, J., Kavukcuoglu, K. (2016). Exploiting Cyclic Symmetry in Convolutional Neural Networks, https://arxiv.org/pdf/1602.02660.pdf
